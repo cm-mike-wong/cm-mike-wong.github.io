@@ -1,0 +1,122 @@
+body {
+	width: device-width;
+}
+
+/* misc */
+.clearer {clear: both;}
+
+.left {float: left;}
+
+.right {float: right;}
+
+/* structure */
+@media only screen and (min-width: 701px) {
+.container {
+	width: device-width;
+	font: normal 1.0em serif;
+}
+}
+
+@media only screen and (max-width: 700px) {
+.container {
+	width: device-width;
+}
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.header h2 ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.content {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+}
+
+.content .spacer {
+	height: 20px;
+}
+
+.content ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.label {
+	font-weight: bold;
+}
+
+.label:after {
+	content: ": ";
+}
+
+.nobul {
+  list-style: none;
+}
+
+table {
+	border: 2px solid black;
+	width: 100%;
+}
+
+table.aligncols th {text-align: center; width: 10%}
+ 
+table.aligncols th + th {width: 45%}
+
+table.aligncols th + th + th {width: 15%}
+
+table.aligncols th + th + th + th {width: 30%}
+
+table.aligncols td {text-align: center;}
+
+table.aligncols td + td {text-align: left;}
+
+table.aligncols td + td + td {text-align: center;}
+
+table.aligncols td + td + td + td {text-align: left;}
+
+th, td {
+	border: 1px solid black;
+}
+
+td .center {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* footer */
+.footer {
+  margin: 0 auto;
+  display: table;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: table-cell;
+  width: 30%;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}

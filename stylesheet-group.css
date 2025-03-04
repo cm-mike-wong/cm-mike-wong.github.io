@@ -1,0 +1,329 @@
+@font-face {
+  font-family: WorkSans;
+  src: url(WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(WorkSans-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Spectral;
+  src: url(Spectral-Regular.ttf);
+}
+
+@font-face {
+  font-family: Spectral;
+  src: url(Spectral-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  width: device-width;
+  background: #8F001A;
+}
+
+a {
+  color: #8F001A;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #67796C;
+}
+
+strong {
+  font-weight: normal;
+  color: #FC6501;
+}
+
+/* misc */
+.clearer {clear: both;}
+
+.left {float: left;}
+
+.right {float: right;}
+
+/* structure */
+@media only screen and (min-width: 1081px) {
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (orientation: landscape) {
+  .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  width: max-width;
+  background: #F2F2F2;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.navigation {
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 1081px) {
+  .navigation a {
+    font: normal 1.6em arial, non-serif;
+    margin: 0px 35px;
+    line-height: 250%;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: landscape) {
+  .navigation a {
+    font: normal 2.0em arial, non-serif;
+    margin: 0px 35px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+  .navigation a {
+    font: normal 2.0em arial, non-serif;
+    font-size: 8vw;
+    line-height: 12vw;
+    margin: 0px 10px;
+  }
+}
+
+.navigation a {
+  font-variant: small-caps;
+}
+
+.navigation a:hover, .navigation #selected {
+  color: #FC6501;
+}
+
+@media only screen and (min-device-width: 1081px) {
+  .header {
+    font: normal 1.4em "WorkSans", Arial, sans-serif;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: landscape) {
+  .header {
+    font: normal 1.4em "WorkSans", Arial, sans-serif;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+  .header {
+    font: normal 1.0em "WorkSans", Arial, sans-serif;
+  }
+}
+
+.header {
+  background: #80746C;
+  color: #F2F2F2;
+  border: thin solid;
+  border-color: #F2F2F2;
+  padding: 0px 38px;
+  text-align: left;
+}
+
+.header h1 {
+  font-weight: normal;
+  padding: 0;
+}
+
+.content {
+  font: normal 20px "Spectral", "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0px 38px 12px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.content .subsection {
+  font: normal 20px "Spectral", "Times New Roman", Times, serif;
+  line-height: 25px;
+}
+
+.content .spacer {
+  height: 20px;
+  clear: both;
+}
+
+@media only screen and {max-width: 1080px} and {orientation: portrait} {
+  .content {
+    font-size: 5vw;
+    line-height: 7.5vw;
+  }
+}
+
+@media only screen and (min-width: 1081px) {
+  img { 
+    float: right;
+    max-width: 400px;
+    width: calc(40% + 70px);
+    height: auto;
+    padding-left: 30px;
+  }
+  table {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1080px) and (orientation: landscape) {
+  img { 
+    float: right;
+    max-width: 400px;
+    width: calc(40% + 70px);
+    height: auto;
+    padding-left: 30px;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 1081px) and (max-width: 1080px) and (orientation: portrait) {
+  img { 
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (max-width: 1080px) and (orientation: portrait) {
+  img { 
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+  }
+  table {
+    width: 100%;
+  }
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.list {
+  font: normal 20px "Spectral", "Times New Roman", Times, serif;
+}
+
+.list ol li {
+  line-height: 25px;
+}
+
+.list ul li {
+  padding: 5px 0;
+  line-height: 25px;
+}
+
+table {
+  border: 2px solid black;
+  width: 100%;
+}
+
+table.aligncols th {text-align: center; width: 30%;}
+ 
+table.aligncols th + th {width: 70%;}
+
+table.aligncols td {text-align: center;}
+
+table.aligncols td + td {text-align: left;}
+
+th, td {
+	border: 1px solid black;
+}
+
+td .center {
+	text-align: center;
+	font-weight: bold;
+}
+
+.footer {
+  font: normal 1.0em courier, serif;
+  margin: 0 auto;
+  padding: 20px 38px 40px;
+  display: table;
+}
+
+/* footer */
+@media only screen and (min-device-width: 1081px) {
+  .footer {
+    font: normal 1.0em courier, serif;
+    margin: 0 auto;
+    padding: 20px 38px 40px;
+    display: table;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: landscape) {
+  .footer {
+    font: normal 1.4em courier, serif;
+    margin: 0 auto;
+    padding: 20px 38px 40px;
+    display: table;
+  }
+}
+
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+  .footer {
+    font-size: 5vw;
+    line-height: 7.5vw;
+  }
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: table-cell;
+  width: 30%;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-left, .footer-right {
+  width: 0%;
+}
+.footer-center {
+  width: 100%;
+}

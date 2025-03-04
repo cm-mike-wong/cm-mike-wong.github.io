@@ -1,0 +1,112 @@
+body {
+	width: device-width;
+}
+
+strong {
+  font-weight: normal;
+  color: #FF0000;
+}
+
+/* misc */
+.clearer {clear: both;}
+
+.left {float: left;}
+
+.right {float: right;}
+
+/* structure */
+@media only screen and (min-width: 1081px) {
+  .container {
+	width: device-width;
+	font: normal 1.0em serif;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .container {
+	width: device-width;
+  }
+}
+
+.header {
+	margin: 20px 0;
+	padding: 0;
+	text-align: center;
+}
+
+.header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.content {
+	margin: 30px 100px;
+	padding: 0;
+	text-align: left;
+}
+
+.content .spacer {
+	height: 20px;
+}
+
+.label {
+	font-weight: bold;
+}
+
+.label:after {
+	content: ": ";
+}
+
+table {
+  border: 2px solid black;
+  width: 100%;
+}
+
+table.aligncols th {text-align: center; width: 15%}
+ 
+table.aligncols th + th {width: 15%}
+
+table.aligncols th + th + th {width: 25%}
+
+table.aligncols th + th + th + th {width: 45%}
+
+table.aligncols td {text-align: center;}
+
+table.aligncols td + td {text-align: center;}
+
+table.aligncols td + td + td {text-align: center;}
+
+table.aligncols td + td + td + td {text-align: left;}
+
+th, td {
+	border: 1px solid black;
+}
+
+td .center {
+	text-align: center;
+	font-weight: bold;
+}
+
+/* footer */
+.footer {
+  margin: 0 auto;
+  display: table;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: table-cell;
+  width: 30%;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
